@@ -1,4 +1,4 @@
-# Проект: Movies-explorer (backend + frontend)
+# Проект: [Movies-explorer](http://movies.nr.nomoredomainsicu.ru) (backend + frontend)
 
 ## **Описание**
 Репозиторий для приложения проекта `Movies-explorer`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, поиск фильмов по запросу и сохранение в личном кабинете. Бэкенд расположиен в директории `backend/`, а фронтенд - в `frontend/`. 
@@ -36,8 +36,10 @@
 ## Ссылки на проект
 
 Адрес репозитория: https://github.com/NataliaRom1/movies_explorer
-[Frontend] http://movies.nr.nomoredomainsicu.ru
-[Backend] https://api.movies.nr.nomoreparties.sbs
+
+Frontend http://movies.nr.nomoredomainsicu.ru
+
+Backend https://api.movies.nr.nomoreparties.sbs
 
 ## **Автор**
 
