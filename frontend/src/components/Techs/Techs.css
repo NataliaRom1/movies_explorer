@@ -1,0 +1,115 @@
+.techs {
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+
+.techs__title {
+  align-self: stretch;
+}
+
+.techs__subtitle {
+  margin: 90px 0 26px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+}
+
+.techs__text {
+  margin: 0 0 100px;
+  text-align: center;
+  max-width: 460px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+
+.techs__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 690px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.techs__item {
+  background-color: #E8E8E8;
+  border-radius: 10px;
+  padding: 21px 0 22px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+
+@media screen and (max-width: 768px) {
+  .techs {
+    padding: 90px 50px;
+  }
+
+  .techs__subtitle {
+    margin: 80px 0 22px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -2px;
+  }
+
+  .techs__text {
+    margin-bottom: 83px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+  }
+
+  .techs__items {
+    max-width: 648px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 84px);
+  }
+
+  .techs__item {
+    padding: 21px 0;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .techs {
+    padding: 70px 18px;
+    background-color: #FFF;
+  }
+
+  .techs__subtitle {
+    margin: 60px 0 24px;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -1.2px;
+  }
+
+  .techs__text {
+    max-width: 292px;
+    margin-bottom: 50px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.44px;
+  }
+
+  .techs__items {
+    max-width: 178px;
+    width: 100%;
+    grid-template-columns: repeat(2, 84px);
+  }
+}

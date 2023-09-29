@@ -1,0 +1,95 @@
+.filter {
+  width: 90%;
+  padding: 42px 0 70px;
+  border-bottom: 1px solid #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* The switch - the box around the slider */
+.filter__container {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 19px;
+}
+
+/* Hide default HTML checkbox */
+.filter__checkbox {
+  display: none;
+}
+
+/* The slider */
+.filter__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #C4C4C4;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.filter__slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.filter__checkbox:checked+.filter__slider {
+  background-color: #2BE080;
+}
+
+.filter__checkbox:focus+.filter__slider {
+  box-shadow: 0 0 1px #2BE080;
+}
+
+.filter__checkbox:checked+.filter__slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.filter__slider {
+  border-radius: 34px;
+}
+
+.filter__slider:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .filter {
+    padding: 42px 0 51px;
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .filter {
+    width: 292px;
+    padding: 43px 0px 49px;
+  }
+
+  .filter__text {
+    font-size: 11px;
+  }
+}

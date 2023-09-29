@@ -1,0 +1,169 @@
+.navigation {
+  width: 100%;
+}
+
+.navigation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 364px;
+  padding-right: 70px;
+}
+
+.navigation__menu-container {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.navigation__menu-item_active {
+  font-weight: 500;
+}
+
+.navigation__acc-container {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.navigation__acc-button {
+  background-image: url(../../images/icon-profile.svg);
+  background-size: 11.5px 14px;
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  width: 26px;
+  height: 30px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navigation__link-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.navigation__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #000;
+  text-align: right;
+}
+
+.navigation__link:last-child {
+  margin-right: 70px;
+}
+
+.navigation__button {
+  color: #FFF;
+  background-color: #000;
+  width: 76px;
+  height: 32px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1150px) {
+  .navigation__wrapper {
+    gap: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation__wrapper {
+    gap: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navigation__wrapper {
+    padding: 159px 0 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: -520px;
+    top: 0;
+    bottom: 0;
+    width: 520px;
+    background-color: #FFF;
+    z-index: 10;
+    transition: right .4s ease-in;
+  }
+
+  .overlay::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+  }
+
+  .navigation__wrapper_burger-opened {
+    right: 0;
+  }
+
+  .navigation__menu-container {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .navigation__menu-item_active {
+    text-decoration: underline;
+  }
+
+  .navigation__acc-container {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+  }
+
+  .navigation__link:last-child {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .navigation__wrapper {
+    padding: 144px 0 48px;
+    width: 100vw;
+  }
+
+  .navigation__menu-container {
+    gap: 24px;
+  }
+
+  .navigation__link-container {
+    gap: 14px;
+  }
+
+  .navigation__link {
+    font-size: 10px;
+  }
+
+  .navigation__button {
+    width: 54px;
+    height: 26px;
+  }
+
+  .navigation__link:last-child {
+    margin-right: 14px;
+  }
+}

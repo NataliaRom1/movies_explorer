@@ -1,0 +1,147 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 281px;
+  background-color: #FDFDFD;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card__img {
+  width: 364px;
+  height: 203px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  margin: 9px 16px 16px;
+  gap: 10px;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card__heading {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  max-width: 290px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Запрещаем перенос строк */
+  overflow: hidden;
+  /* Обрезаем все, что не помещается в область */
+}
+
+.card__like {
+  background-image: url(../../images/like-disable.svg);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.card__delete {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.card:hover .card__delete {
+  background-image: url(../../images/cross.svg);
+}
+
+.card__like_active {
+  background-image: url(../../images/like-active.svg);
+}
+
+.card__like_disable {
+  background-image: url(../../images/like-disable.svg);
+}
+
+.card__duration {
+  margin: 0;
+  color: #A0A0A0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-height: 262px;
+  }
+
+  .card__img {
+    width: 339px;
+    height: 190px;
+  }
+
+  .card__container {
+    margin: 8px 14px 14px;
+    gap: 7px;
+  }
+
+  .card__description {
+    gap: 21px;
+  }
+
+  .card__heading {
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card__img {
+    width: 310px;
+  }
+
+  .card__delete {
+    background-image: url(../../images/cross.svg);
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    max-height: 237px;
+  }
+
+  .card__img {
+    width: 300px;
+    height: 168px;
+  }
+
+  .card__container {
+    margin: 7px 10px 14px 14px;
+    gap: 6px;
+  }
+
+  .card__description {
+    gap: 6px;
+  }
+
+  .card__heading {
+    font-size: 12px;
+    max-width: 240px;
+  }
+
+  .card__duration {
+    font-size: 10px;
+  }
+}

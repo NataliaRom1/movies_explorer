@@ -1,0 +1,13 @@
+.auth__input_login:focus {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.auth__button_login {
+  margin-top: 221px;
+}
+
+@media screen and (max-width: 500px) {
+  .auth__button_login {
+    margin-top: 309px;
+  }
+}
